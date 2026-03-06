@@ -1,0 +1,131 @@
+/* ==========================
+   Reset & Base
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b2e33;
+    color: #fff;
+    padding: 20px;
+}
+
+/* ==========================
+   Container
+========================== */
+.auth-box {
+    background-color: #93b1b5;
+    border-radius: 15px;
+    padding: 35px 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* ==========================
+   Headings
+========================== */
+.auth-heading {
+    font-size: 2rem;
+    color: #0b2e33;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* ==========================
+   Inputs
+========================== */
+.input-field {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 2px solid #0b2e33;
+    border-radius: 12px;
+    background-color: #fff;
+    color: #0b2e33;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #0b2e33;
+    opacity: 0.7;
+}
+
+.input-field:focus {
+    border-color: #0b2e33;
+    outline: none;
+    box-shadow: 0 0 5px #0b2e33;
+}
+
+/* ==========================
+   Buttons
+========================== */
+.btn-action {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0b2e33;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-action:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ==========================
+   Messages
+========================== */
+.msg {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.msg-error {
+    color: #ff6b6b;
+}
+
+.msg-success {
+    color: #0b2e33;
+    font-weight: 600;
+}
+
+/* ==========================
+   Separator
+========================== */
+.separator {
+    border: none;
+    border-top: 1px solid #0b2e33;
+    margin: 30px 0;
+}
+
+/* ==========================
+   Responsive
+========================== */
+@media (max-width: 480px) {
+    .auth-box {
+        padding: 25px 20px;
+    }
+
+    .auth-heading {
+        font-size: 1.6rem;
+    }
+
+    .btn-action {
+        font-size: 1rem;
+    }
+}
